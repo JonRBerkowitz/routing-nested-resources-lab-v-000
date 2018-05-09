@@ -1103,3 +1103,24 @@ Processing by ArtistsController#index as HTML
   [1m[35mArtist Load (0.3ms)[0m  SELECT "artists".* FROM "artists"
   Rendered artists/index.html.erb within layouts/application (9.0ms)
 Completed 200 OK in 274ms (Views: 261.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 96.67.5.73 at 2018-05-09 17:57:45 +0000
+Cannot render console from 96.67.5.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/songs" for 96.67.5.73 at 2018-05-09 17:57:49 +0000
+Cannot render console from 96.67.5.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template /artists with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/JonRBerkowitz/routing-nested-resources-lab-v-000/app/views"
+):
+  app/controllers/songs_controller.rb:6:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (50.5ms)
